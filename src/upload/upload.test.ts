@@ -1,13 +1,6 @@
-// test upload file to GCS
-
-// src/upload/upload.test.ts
-import { Test, TestingModule } from '@nestjs/testing';
 import { UploadService } from './upload.service';
-import { HttpException, HttpStatus } from '@nestjs/common';
-import { Storage } from '@google-cloud/storage';
-import * as fs from 'fs';
 import * as path from 'path';
-
+// test upload file to GCS
 test('upload file to GCS', async () => {
     const file = {
         originalname: 'test.jpg',
